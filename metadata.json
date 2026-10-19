@@ -1,0 +1,6 @@
+{
+  "name": "Eighteen Wellness",
+  "description": "Building the leading platform in regenerative medicine, longevity and wellness. Investing in growing clinics, scaling operations, and providing succession solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

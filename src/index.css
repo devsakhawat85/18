@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Tenor Sans", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-brand-bone: #F9F7F4;
+  --color-brand-sand: #F0EBE1;
+  --color-brand-sand-muted: #E5DFC9;
+  --color-brand-bronze: #785D41;
+  --color-brand-bronze-light: #9E8062;
+  --color-brand-charcoal: #232B32;
+  --color-brand-charcoal-deep: #181E23;
+  --color-brand-slate: #304254;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bone);
+  color: var(--color-brand-charcoal);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Subtle architectural arch utilities */
+.arch-mask-top {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.arch-mask-full {
+  border-radius: 9999px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
